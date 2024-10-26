@@ -10,6 +10,7 @@ function ClientList({ clients, deleteClient, editClient }) {
     setSearchTerm(e.target.value);
   };
 
+  
   // Filtrer les clients en fonction du terme de recherche
   const filteredClients = clients.filter((client) =>
     client.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
